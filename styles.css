@@ -7,12 +7,20 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    -webkit-border-radius: 11;
+    -moz-border-radius: 11;
+    border-radius: 11px;
+    border: solid #1f628d 2px;
 }
 #screen {
     width: 320px;
     height: 70px;
     background-color: cyan;
     margin-top: 40px;
+    -webkit-border-radius: 11;
+    -moz-border-radius: 11;
+    border-radius: 11px;
+    border: solid #1f628d 2px;
 }
 
 #keypad {
@@ -20,6 +28,13 @@
     height: 380px;
     background-color: #4700D8;
     margin-bottom: 40px;
+    display: grid;
+    grid-template: repeat(8, 1fr) / repeat(5, 1fr);
+    gap: 6px;
+    -webkit-border-radius: 11;
+    -moz-border-radius: 11;
+    border-radius: 11px;
+    border: solid #1f628d 2px;
 }
 
 .btn {
@@ -37,7 +52,7 @@
     box-shadow: 1px 1px 3px #666666;
     font-family: Courier New;
     color: #ffffff;
-    font-size: 41px;
+    font-size: 32px;
     padding: 10px 10px 10px 12px;
     border: solid #1f628d 2px;
     text-decoration: none;
@@ -51,4 +66,13 @@
     background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
     background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
     text-decoration: none;
+  }
+
+  p {
+    text-align: right;
+    font-family: Courier New;
+    color: #4700D8;
+    font-size: 60px;
+    padding: 0;
+    margin: 0;
   }
